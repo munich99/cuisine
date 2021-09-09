@@ -17,11 +17,17 @@ export class AppComponent {
     preis: 3,
   }];
 
+  choicies : Daily[] =[];
+
   deleteDaily(daily:Daily) : void{
     this.dailies = this.dailies.filter( a => a != daily)
   }
 
-  putDaily(daily:Daily) : void{
-    this.dailies = this.dailies.filter( a => a != daily)
+  putDaily(daily:Daily) {
+
+    var xxx = this.choicies.push(daily);
+    this.choicies = this.choicies.filter( a => a == daily);
+    //this.choicies  = this.choicies.push("kkk")  ;
+    // this.dailies.filter( a => a == daily)
   }
 }

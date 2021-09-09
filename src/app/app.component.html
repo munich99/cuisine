@@ -286,6 +286,14 @@
     <span>{{daily.menue}}</span>
     <span>{{daily.preis}}</span>
     <button (click)="deleteDaily(daily)">x</button>
+    <button (click)="putDaily(daily)">v</button>
+  </div>
+
+  <div class="card-container" *ngFor="let choice of choicies">
+
+    <span style="color: red;" >({{choice.menue}})</span>
+    <span>{{choice.preis}}</span>
+    
   </div>
 
 
