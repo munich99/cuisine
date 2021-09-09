@@ -24,10 +24,7 @@ export class AppComponent {
   }
 
   putDaily(daily:Daily) {
-
-    var xxx = this.choicies.push(daily);
-    this.choicies = this.choicies.filter( a => a == daily);
-    //this.choicies  = this.choicies.push("kkk")  ;
-    // this.dailies.filter( a => a == daily)
+    this.choicies.push(daily);
+    this.deleteDaily(daily);
   }
 }
